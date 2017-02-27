@@ -22,8 +22,8 @@ body {
 	margin-bottom: 5px;
 	border-bottom: 1px solid grey;
 }
-#guessedLetters, #score, #currentWord {
-	font-size: 34px;
+#score, #currentWord, #GuessRemain{
+	font-size: 20px;
 }
 #cont2 {
 	clear: both;
@@ -32,3 +32,55 @@ body {
 #currentWord {
 	padding-bottom: 25px;
 }
+
+/*alphabet dynamically created in javascript effects guessed letters div called "GuessedLetters"
+*/
+#alphabet {
+  content: "";
+  display: table;
+  clear: both;
+  margin:15px auto;
+  padding:0;
+  max-width:500px;
+}
+
+#alphabet li {
+  float:left;
+  margin: 0 10px 10px 0;
+  list-style:none;
+  width:35px;
+  height:30px;
+  padding-top:10px;
+  background: #0269C2;
+  color: white;
+  cursor:pointer;
+  border: solid 1px white;
+}    
+#alphabet li:hover {
+      background: grey;
+      border: solid 1px white;
+      color: white;
+  }
+  #my-word {
+  margin: 0;
+  display: block;
+  padding: 0;
+  display:block;
+}
+
+#my-word li {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size:1.6em;
+}
+.active {
+  background-color: grey;
+  cursor:default;
+  opacity: 0.25;
+}
+
+}
+  
